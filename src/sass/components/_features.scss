@@ -1,0 +1,15 @@
+.feature{
+    display: flex;
+    justify-content: center;
+
+    &__text{
+        padding-top: 1.5rem;
+        margin-left: 1.5rem;
+    }
+
+    &__text-details{
+            font-size: 1.7rem;
+            padding-top: 1rem;
+    }
+
+}

@@ -1,0 +1,47 @@
+.home__section{
+    display: flex;
+
+    @include respond(tab-port){
+        flex-direction: column;
+    } 
+}
+
+.features__section{
+    margin: 15rem 6rem;
+}
+
+
+.story__section{
+    width: 100%;
+}
+
+.homes__section{
+    margin: 15rem 8rem;
+}
+
+.gallery__section{
+    padding: 1rem;
+    background-color: #f9f7f6;
+}
+
+
+.footer__section{
+    background-color: #101d2c;
+    width: 100%;
+    padding: 8rem;
+}
+
+.realtor__section{
+    display: flex;
+    align-items: center;
+    background-color: #101d2c;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+
+    h3{
+        padding-bottom: 2rem;
+    }
+
+}

@@ -1,0 +1,106 @@
+.header__section {
+  background-color: black;
+  width: 100%;
+  height: 80vh;
+
+  @include respond(tab-port) {
+    height: 100%;
+  }
+}
+
+.header {
+  background-color: #54483a;
+  background-image: linear-gradient(
+      rgba(16, 29, 44, 0.93),
+      rgba(16, 29, 44, 0.93)
+    ),
+    url(/src/assets/images/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 8rem;
+  padding-top: 4rem;
+  height: 100%;
+
+  @include respond(tab-port) {
+    height: 90vh;
+  }
+
+  @include respond(phone) {
+    padding: 5rem;
+  }
+
+  &__logo {
+    height: 3rem;
+  }
+
+  &__logo-container {
+    text-align: center;
+  }
+
+  &__heading-main {
+    padding-top: 6rem;
+  }
+
+  .heading-1 {
+    font-size: 4.5rem;
+    color: #f9f7f6;
+    line-height: 1;
+    padding: 2rem 0;
+  }
+
+  .heading-3 {
+    font-size: 1.6rem;
+    color: #c69963;
+    text-transform: uppercase;
+  }
+
+  &__seenon-text {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+    font-size: 1.6rem;
+    color: #aaa;
+    padding-top: 4rem;
+
+    @include respond(tab-port) {
+      padding-top: 8rem;
+    }
+  }
+
+  &__seenon-text::before {
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: currentColor;
+  }
+
+  &__seenon-text::after {
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: currentColor;
+  }
+
+  &__seenon-logos {
+    display: flex;
+    justify-content: space-around;
+
+    @include respond(phone){
+      justify-content: space-between;
+}
+
+    img {
+      max-height: 2.5rem;
+      max-width: 100%;
+      filter: brightness(70%);
+
+      @include respond(phone) {
+        max-height: 1.8rem;
+        max-width: 100%;
+        filter: brightness(70%);
+      }
+    }
+  }
+
+}

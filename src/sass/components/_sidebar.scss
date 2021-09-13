@@ -1,0 +1,19 @@
+.sidebar__section{
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar{
+    background-color: $color-primary;
+    color: white;
+    font-size: 1.3rem;
+    padding: 1.2rem;
+
+    @include respond(tab-port){
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        padding: 2rem;
+    } 
+}
